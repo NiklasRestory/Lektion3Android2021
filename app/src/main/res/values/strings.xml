@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LetsLearnInJava</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ToAnother">To Another</string>
+    <string name="ToOne">To One</string>
+</resources>

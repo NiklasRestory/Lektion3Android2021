@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_navigation"
+    app:startDestination="@id/oneFragment">
+
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.example.letslearninjava.OneFragment"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_oneFragment_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+        <action
+            android:id="@+id/action_oneFragment_to_yetAnotherFragment"
+            app:destination="@id/yetAnotherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anotherFragment"
+        android:name="com.example.letslearninjava.AnotherFragment"
+        android:label="fragment_another"
+        tools:layout="@layout/fragment_another" >
+        <action
+            android:id="@+id/action_anotherFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_anotherFragment_to_yetAnotherFragment"
+            app:destination="@id/yetAnotherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yetAnotherFragment"
+        android:name="com.example.letslearninjava.YetAnotherFragment"
+        android:label="fragment_yet_another"
+        tools:layout="@layout/fragment_yet_another" >
+        <action
+            android:id="@+id/action_yetAnotherFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_yetAnotherFragment_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+    </fragment>
+</navigation>
